@@ -13,11 +13,15 @@ ActiveAdmin.register DdrUser do
 # end
   index do
     selectable_column
+    column "id" do |user|
+      link_to user.id, admin_ddr_user_path(post)
+    end
     column :id
     column :email
     column :last_sign_in_at
     column :created_at
     column :name
     column :shop
+    actions
   end
 end
