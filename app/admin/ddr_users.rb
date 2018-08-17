@@ -16,7 +16,6 @@ ActiveAdmin.register DdrUser do
     column "id" do |user|
       link_to user.id, admin_ddr_user_path(user)
     end
-    column :id
     column :email
     column :last_sign_in_at
     column :created_at
