@@ -21,6 +21,7 @@ ActiveAdmin.register DdrUser do
     column :created_at
     column :name
     column :shop
+    column :status_subscription
     actions
   end
 end

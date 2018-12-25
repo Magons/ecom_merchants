@@ -11,14 +11,4 @@ ActiveAdmin.register AdminUser do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-  index do
-    selectable_column
-    column :id
-    column :email
-    column :last_sign_in_at
-    column :created_at
-    column :name
-    column :shop
-  end
-
 end
